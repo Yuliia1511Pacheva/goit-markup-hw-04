@@ -103,16 +103,39 @@ h1, h2, h3, p {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-
-    display: block;
+   
+    display: flex;
+    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
+    height: 16px;
+    fill: var(--text-color);
 }
 
 .site-nav .link:hover, .site-nav .link:focus,
 .site-contacts .link:hover, .site-contacts .link:focus {
     color: var(--accent-color);
+    fill: var(--accent-color);
 }
+
+
+.icon {
+    fill: currentColor;
+    margin-right: 10px;
+}
+
+.mail {
+    width: 16px;
+    height: 12px;
+}
+
+.phone {
+    width: 10px;
+    height: 16px;
+}
+/* .icon-link:hover {
+    fill: var(--accent-color);
+} */
 
 /* hero */
 .hero {
