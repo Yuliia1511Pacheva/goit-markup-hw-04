@@ -120,7 +120,7 @@ h1, h2, h3, p {
 
 
 .icon {
-    fill: currentColor;
+    /* fill: currentColor; */
     margin-right: 10px;
 }
 
@@ -133,9 +133,6 @@ h1, h2, h3, p {
     width: 10px;
     height: 16px;
 }
-/* .icon-link:hover {
-    fill: var(--accent-color);
-} */
 
 /* hero */
 .hero {
@@ -218,8 +215,23 @@ background-color:#188CE8;
     display: flex;
 }
 
-.features .features-item:not(:last-child) {
+.features li:not(:last-child) {
     margin-right: 30px;
+}
+
+.features-container {
+    display: flex;
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.features-icon {
+    width: 70px;
+    height: 70px;
 }
 
 .features-name {
@@ -236,8 +248,6 @@ background-color:#188CE8;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-
-    margin-bottom: 10px;
 }
 
 /* АЛЬТЕРНАТИВНИЙ СПОСІБ ДОДАВАННЯ SVG ЧЕРЕЗ ПСЕВДОЕЛЕМЕНТИ */
@@ -318,6 +328,7 @@ background-color:#188CE8;
     background-color: var(--primary-white-color);
     width: 270px;
     padding: 30px 0px;  
+   
 }
 
 .team-subtitle {
@@ -335,6 +346,66 @@ background-color:#188CE8;
     line-height: 1.19;
     letter-spacing: 0.03em;
     text-align: center;
+    margin-bottom: 18px;
+}
+
+.social-links {
+    display: flex;
+    justify-content:center;
+}
+
+.social-item {
+    fill: #AFB1B8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+
+.social-links li:not(:last-child){
+    margin-right: 9px;
+}
+
+.social-item:hover, .social-item:focus {
+    fill: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+    
+}
+/* CLIENTS */
+.clients-list {
+    display: flex; 
+}
+
+.clients-list .link-client {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    fill: #AFB1B8;
+}
+
+.link-client:hover, .link-client:focus{
+    fill: var(--accent-color);
+    border: 1px solid var(--accent-color);
+}
+
+.clients-list li:not(:last-child) {
+    margin-right: 30px;
+}
+
+.icon-client {
+    width: 106px;
+    height: 60px;
 }
 
 /* Footer */
@@ -370,6 +441,32 @@ address {
     font-style: normal;
     margin-top: 20px;
     }
+.flex-container {
+    display: flex;
+}
+
+.social-footer {
+    display: flex;
+    margin-left: 70px;
+}
+
+.social-footer p {
+    color: var(--primary-white-color);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    margin-bottom: 20px;
+}
+
+.item-footer {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);;
+}
+
 
 
 /* PORTFOLIO */
